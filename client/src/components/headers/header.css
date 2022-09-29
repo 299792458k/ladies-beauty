@@ -1,0 +1,81 @@
+header {
+  min-height: 70px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+header .logo {
+  flex: 1;
+  display: flex;
+}
+
+header .logo span {
+  margin-left: 13px;
+  line-height: 50px;
+}
+
+header .menu-action {
+  display: flex;
+  margin-right: 20px;
+}
+
+header .profile {
+  cursor: pointer;
+}
+
+header .profile-img {
+  display: flex;
+  margin-left: 20px;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background: center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+header a {
+  text-transform: uppercase;
+  color: #555;
+}
+header ul li {
+  display: inline-block;
+  opacity: 0.7;
+  padding: 0 20px;
+  line-height: 32px;
+}
+header ul li:hover {
+  opacity: 1;
+}
+
+.logo-name {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 50px;
+  margin-left: 16px;
+  color: #736464;
+}
+
+.cart-icon {
+  position: relative;
+  margin-right: 20px;
+}
+.cart-icon span {
+  background: var(--primary-color);
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 7px;
+  font-size: 10px;
+}
+
+.logo .admin-icon {
+  height: 50px;
+}

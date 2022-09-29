@@ -1,0 +1,14 @@
+.profile-popup-wrapper {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  z-index: 600;
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 5%);
+  border-radius: 2px;
+  background: #fff;
+  max-height: 8.375rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0.3125rem 0;
+  font-size: 0.9125rem;
+}

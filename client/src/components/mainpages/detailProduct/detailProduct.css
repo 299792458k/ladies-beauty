@@ -1,0 +1,124 @@
+.detail {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+  font-size: 150%;
+}
+.detail img {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+}
+.box-detail {
+  max-width: 500px;
+  width: 100%;
+  margin: 5px 20px;
+}
+.box-detail .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-detail h2 {
+  text-transform: uppercase;
+  color: darkblue;
+  letter-spacing: 2px;
+  font-weight: 2rem;
+}
+.box-detail p {
+  line-height: 1.5;
+  margin: 10px 0;
+  opacity: 0.8;
+}
+.box-detail .cart {
+  background: #333;
+  color: white;
+  margin-top: 10px;
+  padding: 10px 25px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.detail-rating {
+}
+
+.detail-rating-title {
+  color: #555;
+  text-transform: uppercase;
+}
+
+.detail-rating-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #fffbf8;
+  min-height: 5rem;
+  border: 1px solid #f9ede5;
+  margin: 1rem 0;
+  border-radius: 2px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1.875rem;
+}
+
+.detail-rating-header-stars {
+  font-size: 24px;
+  color: #e51338;
+  margin-bottom: 12px;
+}
+.detail-rating-header-icons svg {
+  font-size: 24px;
+}
+
+.detail-rating-comments.show {
+}
+.rating-comments-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  display: flex;
+  padding: 1rem 0 1rem 1.25rem;
+}
+.comments-item-left {
+  width: 2.5rem;
+  margin-right: 0.625rem;
+  text-align: center;
+}
+.comments-item-avt {
+  border: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50%;
+}
+.comments-item-right {
+}
+
+.comments-item-username {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.75rem;
+}
+.comments-item-stars {
+}
+.comments-item-time {
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.54);
+}
+.comments-item-data {
+  position: relative;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0.9375rem 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgba(0, 0, 0, 0.87);
+  word-break: break-word;
+  white-space: pre-wrap;
+}

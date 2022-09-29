@@ -1,0 +1,135 @@
+.products {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  justify-items: flex-start;
+  margin: 20px 0;
+}
+
+/* ----------- Product Item ----------------- */
+@import url("../utils/productItem/productItem.css");
+
+.delete-all {
+  text-align: right;
+  margin: 20px;
+}
+/* .delete-all input{
+    height: 25px;
+    width: 25px;
+    transform: translateY(5px);
+    margin: 0 15px;
+} */
+.delete-all span {
+  text-transform: uppercase;
+  color: #4a03fb;
+  letter-spacing: 1.3px;
+}
+.delete-all button {
+  border: 1px solid crimson;
+  padding: 8px 25px;
+  color: crimson;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+/* ------------ Filters Menu ----------------- */
+.filter_menu {
+  width: 100%;
+  min-height: 40px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+.filter_menu select,
+input {
+  border: 1px solid #ccc;
+  outline: none;
+  height: 40px;
+  padding: 0 5px;
+}
+.filter_menu input {
+  flex: 1;
+  margin: 0 10px;
+}
+
+/* -------------------- pagination --------------- */
+.pagination {
+  text-align: center;
+}
+.pagination button {
+  margin-left: 8px;
+  height: 40px;
+  padding: 10px 18px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #555;
+  text-transform: capitalize;
+}
+
+.pagination button:hover {
+  background-color: #c252b6;
+  opacity: 0.6;
+}
+
+.pagination button.active {
+  background-color: #c252b6;
+}
+
+/* custom checkbox */
+.delete-all input[type="checkbox"] {
+  line-height: 2.1ex;
+}
+
+.delete-all input[type="checkbox"] {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 15px;
+  z-index: 99;
+  opacity: 0;
+}
+
+.delete-all input[type="checkbox"] + label {
+  position: relative;
+  display: hidden;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+.delete-all input[type="checkbox"] + label::before {
+  position: relative;
+  margin-left: 6px;
+  content: "";
+  display: inline-block;
+  vertical-align: -25%;
+  height: 25px;
+  width: 25px;
+  top: 2px;
+  background-color: white;
+  border: 1px solid rgb(166, 166, 166);
+  border-radius: 4px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.25);
+  margin-right: 0.5em;
+}
+
+.delete-all input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 1.7ex;
+  height: 0.4ex;
+  background: rgba(0, 0, 0, 0);
+  top: 4px;
+  left: 11px;
+  border: 4.5px solid #1da1f2;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}

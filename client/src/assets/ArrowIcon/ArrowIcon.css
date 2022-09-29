@@ -1,0 +1,8 @@
+.arrow-icon {
+  font-size: 0.7rem;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  position: relative;
+}

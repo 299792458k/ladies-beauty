@@ -1,0 +1,11 @@
+.profile-popup-item {
+  width: 100%;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  padding-left: 0.75rem;
+  cursor: pointer;
+}
+
+.profile-popup-item:hover {
+  color: var(--primary-color);
+}
